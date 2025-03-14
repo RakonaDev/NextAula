@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 */
 
 export default function LandingLayout({
-  children,
-}: Readonly<{
-  children: ReactNode;
-}>) {
+  children
+}: {
+  children: ReactNode
+}) {
   return (
     <>
       <HeaderLayout />
