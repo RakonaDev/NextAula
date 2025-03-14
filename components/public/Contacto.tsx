@@ -9,7 +9,7 @@ import axios from 'axios';
 import { Global } from '../../src/helper/Global';
 import { SchemaContacto } from '../shared/Schemas';
 import { Errors } from '../shared/Errors';
-const Contacto = (): JSX.Element => {
+const Contacto = () => {
   const mapStyles = {
     height: '500px',
     width: '100%',
