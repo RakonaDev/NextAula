@@ -1,6 +1,7 @@
 import { FooterLayout } from "@/layouts/FooterLayout";
 import { HeaderLayout } from "@/layouts/HeaderLayout";
 import Carrito from "../../components/public/utils/Carrito";
+import React from "react";
 
 /*
 const montserrat = Montserrat({
