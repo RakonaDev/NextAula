@@ -12,7 +12,7 @@ import { config } from "@/config/config";
 import { InputForm } from "../../../../components/form/InputForm";
 import { ButtonSubmit } from "../../../../components/form/ButtonSubmit";
 
-const FormCambiarContrasena = ({ token }: { token: string }) => {
+const FormCambiarContrasena = ({ token }: { token?: string }) => {
   const [loading, setLoading] = useState<boolean>(false);
   
   const cambiarContrasena = async (
