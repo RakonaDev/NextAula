@@ -36,4 +36,11 @@ export interface CursoDetalles {
   createdAt?: Date;
   updatedAt?: Date;
   curso?: Curso;
+  beneficios?: Benficio[] 
+}
+
+export interface Benficio {
+  id: number;
+  icono: string;
+  descripcion: string;
 }

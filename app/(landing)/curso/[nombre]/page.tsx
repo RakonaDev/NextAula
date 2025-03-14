@@ -200,7 +200,7 @@ const ViewCurso = async ({
               <a
                 href="https://wa.me//+51973044253"
                 target="_blank"
-                rel="noreferrer"
+                rel="noreferrer noopener"
                 className="flex items-center gap-2 text-xl md:text-2xl font-medium bg-green-500 rounded-main hover:bg-green-600 text-white-main text-center justify-center py-3 px-4"
               >
                 <BsWhatsapp />
