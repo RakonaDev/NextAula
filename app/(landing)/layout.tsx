@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { FooterLayout } from "@/layouts/FooterLayout";
 import { HeaderLayout } from "@/layouts/HeaderLayout";
 import Carrito from "../../components/public/utils/Carrito";
@@ -17,9 +18,11 @@ export const metadata: Metadata = {
 */
 
 export default function LandingLayout({
-  children
+  children,
+  components
 }: {
-  children: ReactNode
+  children: ReactNode,
+  components: ReactNode
 }) {
   return (
     <>
