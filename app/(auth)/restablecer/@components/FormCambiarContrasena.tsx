@@ -1,4 +1,5 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 "use client";
 import { CambiarContrasenaInterface } from "@/interfaces/AuthInteface";
 import { SchemaCambiarContrasena } from "@/schemas/AuthSchema";
@@ -11,9 +12,9 @@ import { config } from "@/config/config";
 import { InputForm } from "../../../../components/form/InputForm";
 import { ButtonSubmit } from "../../../../components/form/ButtonSubmit";
 
-const FormCambiarContrasena = () => {
+const FormCambiarContrasena = ({ token }: { token: string }) => {
   const [loading, setLoading] = useState<boolean>(false);
-
+  
   const cambiarContrasena = async (
     values: CambiarContrasenaInterface
   ): Promise<void> => {
