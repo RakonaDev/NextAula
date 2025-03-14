@@ -17,10 +17,10 @@ import area8 from '../../assets/areas/8.webp'
 import { GiMining, GiRoad } from 'react-icons/gi' // Para Geotecnia
 import Banner from './Banner'
 import { slide2 } from '../shared/images'
-import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
+import Link from 'next/link'
 
-const Capacitacion = (): JSX.Element => {
+const Capacitacion = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -55,9 +55,9 @@ const Capacitacion = (): JSX.Element => {
         </div>
         <div className="areas__main">
             <div className="areas__main__item">
-              <Link to={`/cursos/${formatearURL('estructuras')}`}>
+              <Link href={`/cursos/${formatearURL('estructuras')}`}>
                 <div className="cardArea">
-                  <img src={area1} alt="" />
+                  <img src={area1.src} alt="" />
                   <div className="cardArea__content">
                     <span>
                       <FaBuilding />
@@ -69,7 +69,7 @@ const Capacitacion = (): JSX.Element => {
             </div>
             <div className="areas__main__item">
               <div className="cardArea">
-                <img src={area2} alt="" />
+                <img src={area2.src} alt="" />
                 <div className="cardArea__content">
                   <span>
                     <FaCity />
@@ -80,7 +80,7 @@ const Capacitacion = (): JSX.Element => {
             </div>
             <div className="areas__main__item">
               <div className="cardArea">
-                <img src={area3} alt="" />
+                <img src={area3.src} alt="" />
                 <div className="cardArea__content">
                   <span>
                     <GiRoad />
@@ -91,7 +91,7 @@ const Capacitacion = (): JSX.Element => {
             </div>
             <div className="areas__main__item">
               <div className="cardArea">
-                <img src={area4} alt="" />
+                <img src={area4.src} alt="" />
                 <div className="cardArea__content">
                   <span>
                     <FaTint />
@@ -103,7 +103,7 @@ const Capacitacion = (): JSX.Element => {
 
             <div className="areas__main__item">
               <div className="cardArea">
-                <img src={area5} alt="" />
+                <img src={area5.src} alt="" />
                 <div className="cardArea__content">
                   <span>
                     <FaProjectDiagram />
@@ -113,9 +113,9 @@ const Capacitacion = (): JSX.Element => {
               </div>
             </div>
             <div className="areas__main__item">
-              <Link to={`/cursos/${formatearURL('construcción')}`}>
+              <Link href={`/cursos/${formatearURL('construcción')}`}>
               <div className="cardArea">
-                <img src={area6} alt="" />
+                <img src={area6.src} alt="" />
                 <div className="cardArea__content">
                   <span>
                     <FaHardHat />
@@ -128,7 +128,7 @@ const Capacitacion = (): JSX.Element => {
             </div>
             <div className="areas__main__item">
               <div className="cardArea">
-                <img src={area7} alt="" />
+                <img src={area7.src} alt="" />
                 <div className="cardArea__content">
                   <span>
                     <GiMining />
@@ -138,9 +138,9 @@ const Capacitacion = (): JSX.Element => {
               </div>
             </div>
             <div className="areas__main__item">
-              <Link to={`/cursos/${formatearURL('Topografía y Fotogametría')}`}>
+              <Link href={`/cursos/${formatearURL('Topografía y Fotogametría')}`}>
                 <div className="cardArea">
-                  <img src={area8} alt="" />
+                  <img src={area8.src} alt="" />
                   <div className="cardArea__content">
                     <span>
                       <FaMapMarkerAlt />
