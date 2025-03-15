@@ -5,7 +5,7 @@ import lg2 from '../../assets/varios/lg_paypal.png'
 import qr from '../../assets/varios/qr.png'
 import { FaMoneyCheckAlt, FaFileInvoiceDollar, FaEnvelope, FaUserLock } from 'react-icons/fa'
 import { useEffect } from 'react'
-const Inscripcion = (): JSX.Element => {
+const Inscripcion = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
