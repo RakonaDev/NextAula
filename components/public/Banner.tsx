@@ -11,6 +11,7 @@ const Banner = ({
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  console.log(imagen)
   return (
     <section
       className="relative px-5 py-20 pt-32 pb-20 bg-center before:absolute before:w-full before:h-full before:bg-black-main before:opacity-50 before:top-0 before:left-0"

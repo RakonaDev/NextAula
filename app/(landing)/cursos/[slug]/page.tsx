@@ -4,6 +4,7 @@ import Banner from "../../../../components/public/Banner";
 import { getServerSideProps } from "@/server/getServerSideProps";
 import { ContentMain } from "../../../../components/public/estructura/ContentMain";
 import { SeoCursos } from "@/layouts/seo/SeoCursos";
+import { Global } from "@/helper/Global";
 
 export async function generateMetadata({ params }: { params: any }) {
   const metadata = await SeoCursos({ params });
@@ -20,7 +21,7 @@ export default async function page({
   return (
     <>
       <Banner
-        imagen={`http://localhost:4000${dataCategorias.url_imagen}`}
+        imagen={`${Global.urlImages}${dataCategorias.categoria.url_imagen}`}
         titulo={dataCategorias.nombre}
       />
       <div className="w-full">
@@ -38,7 +39,7 @@ export default async function page({
                     <CardCurso
                       id={String(curso.id)}
                       horas={String(curso.horas)}
-                      img={`http://localhost:4000${curso.imagen}`}
+                      img={`${Global.urlImages}${curso.imagen}`}
                       precio={String(curso.precio)}
                       titulo={curso.nombre}
                     />

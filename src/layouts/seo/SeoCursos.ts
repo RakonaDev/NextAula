@@ -3,7 +3,7 @@
 import { getServerSideProps } from "@/server/getServerSideProps";
 
 export async function SeoCursos({ params }: any) {
-  const { slug } = params;
+  const { slug } = await params;
   const categoria = await getServerSideProps(`categoriasBuscar/${slug}`);
 
   return {

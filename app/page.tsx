@@ -71,7 +71,7 @@ export default async function page() {
                 return (
                   <div className="group" key={cat.id}>
                     <Link
-                      href={`/cursos/${formatUrl(cat.nombre)}`}
+                      href={`/cursos/${cat.slug}`}
                       className="block"
                     >
                       <div className="relative flex items-center justify-center overflow-hidden transition-transform duration-300 rounded-lg shadow-md">
