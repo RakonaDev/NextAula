@@ -9,7 +9,6 @@ import { Footer } from "../components/public/estructura/Footer";
 import Carrito from "../components/public/utils/Carrito";
 import { Slide } from "../components/shared/slide/Slide";
 import { ContentMain } from "../components/public/estructura/ContentMain";
-import { formatUrl } from "@/logic/formateador";
 import { config } from "@/config/config";
 import { getServerSideProps } from "@/server/getServerSideProps";
 import { FormContacto } from "./(landing)/contacto/@components/FormContacto";
