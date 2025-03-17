@@ -175,11 +175,11 @@ const ViewCurso = async ({
               </h2>
               {curso?.dolar ? (
                 <div className="text-lg md:text-xl lg:text-2xl text-center">
-                  S/ {curso.precio}.00 Soles ó {curso.dolar}.00 Dólares
+                  S/ {curso.precio} Soles ó {curso.dolar} Dólares
                 </div>
               ) : (
                 <div className="text-lg md:text-xl lg:text-2xl text-center">
-                  S/ {curso.precio}.00 Soles
+                  S/ {curso.precio} Soles
                 </div>
               )}
 

@@ -6,6 +6,12 @@ import Tabs, {
   TabTitle,
 } from "../../../../components/navigation/Tabs";
 import { AulaMetadata } from "@/layouts/seo/aula/AulaMetaData";
+import { getServerSideProps } from "@/server/getServerSideProps";
+import { CursosUsuario } from "../materiales/@interfaces/FetchMaterialInterface";
+import ExamenColumna from "./@components/ExamenColumna";
+interface Root {
+  examenes: CursosUsuario[]
+}
 
 export function generateMetadata() {
   const metadata = AulaMetadata({ title: "Exámenes" });
@@ -13,7 +19,8 @@ export function generateMetadata() {
   return metadata;
 }
 
-const Page: NextPage = () => {
+const Page: NextPage = async () => {
+  const data: Root = await getServerSideProps("obtenerExamenesAsignados");
   const examenesPendientes = [
     {
       id: "EX001",
@@ -54,6 +61,7 @@ const Page: NextPage = () => {
       calificacion: "18/20",
     },
   ];
+
   return (
     <>
       <div className="w-full ">
@@ -88,7 +96,7 @@ const Page: NextPage = () => {
                         </th>
                       </tr>
                     </thead>
-                    <tbody className="bg-white divide-y divide-gray-200">
+                    {/* <tbody className="bg-white divide-y divide-gray-200">
                       {examenesPendientes.map((examen) => (
                         <tr key={examen.id} className="hover:bg-gray-50">
                           <td className="px-4 py-4 text-sm font-medium text-gray-900 whitespace-nowrap">
@@ -115,7 +123,8 @@ const Page: NextPage = () => {
                           </td>
                         </tr>
                       ))}
-                    </tbody>
+                    </tbody> */}
+                    <ExamenColumna data={data} />
                   </table>
                 </div>
 
