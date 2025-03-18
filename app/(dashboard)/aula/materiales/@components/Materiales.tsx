@@ -66,7 +66,7 @@ const Materiales: React.FC = () => {
   ];
   */
   const getMateriales = async () => {
-    const response = await axios.get<ResponseFetchMaterial>(`${Global.url}/obtenerCursoMaterialesPorAlumno`, {
+    const response = await axios.get<ResponseFetchMaterial>(`${Global.url}/obtenerCursoMateriales`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       }
